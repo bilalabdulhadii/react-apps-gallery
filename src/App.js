@@ -19,20 +19,20 @@ import "./App.css";
 
 function App() {
     const [mode, setMode] = useState(
-        () => localStorage.getItem("theme") || "dark",
+        () => localStorage.getItem("theme") || "light",
     );
     const theme = useMemo(() => getTheme(mode), [mode]);
 
     useEffect(() => {
         // Ensure default theme is dark when unset
-        if (!localStorage.getItem("theme"))
-            localStorage.setItem("theme", "dark");
+        if (!localStorage.getItem("apps_gallery_theme"))
+            localStorage.setItem("apps_gallery_theme", "light");
     }, []);
 
     const toggleTheme = () => {
         const next = mode === "dark" ? "light" : "dark";
         setMode(next);
-        localStorage.setItem("theme", next);
+        localStorage.setItem("apps_gallery_theme", next);
     };
 
     return (
