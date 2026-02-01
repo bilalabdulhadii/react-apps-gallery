@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+:root {
+    --bg-dark: #0b1220;
+    --bg-light: #f4f7ff;
+    --accent: linear-gradient(90deg, #7c4dff 0%, #00e5ff 100%);
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+/* App header */
+.MuiAppBar-root {
+    background: transparent !important;
+}
+
+/* Search */
+.MuiTextField-root .MuiInputBase-root {
+    border-radius: 12px;
+    background: rgba(
+        255,
+        255,
+        255,
+        0.06
+    ); /* subtle in dark mode; overridden in light mode via sx */
+    padding: 6px 10px;
+    box-shadow: 0 6px 20px rgba(40, 42, 80, 0.06);
+}
+.MuiTextField-root .MuiInputBase-input {
+    color: inherit;
+}
+.MuiTextField-root .MuiInputBase-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Gallery grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+@media (min-width: 600px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 992px) {
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.grid-item {
+    width: 100%;
+    padding: 0;
+}
+
+/* ensure card occupies full cell and has breathing room */
+.grid-item .MuiCard-root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* image sizing inside card */
+.card-media-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-media-container img,
+.card-media-container .MuiCardMedia-root {
+    transition:
+        transform 1s cubic-bezier(0.2, 0.9, 0.2, 1),
+        box-shadow 1s ease;
+}
+
+.MuiCard-root:hover .card-media-container .card-img {
+    transform: translateY(-4px) scale(1.05);
+}
+
+/* keep badge anchored in corner */
+.card-gradient {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 6;
+    padding: 6px 10px;
+    border-bottom-left-radius: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    background: linear-gradient(90deg, #7c4dff, rgba(0, 229, 255, 0.9));
+    transition: box-shadow 5s ease;
+}
+
+/* Card style */
+.card-media-container {
+    position: relative;
+}
+.card-avatar {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    overflow: hidden;
+    /* removed border - cleaner look */
+    box-shadow: 0 8px 30px rgba(16, 16, 40, 0.12);
+}
+
+.card-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Detail header */
+.app-header {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.app-icon {
+    width: 96px;
+    height: 96px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(16, 16, 40, 0.12);
+}
+
+/* Developer card */
+.dev-card {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 12px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02);
+}
+
+/* Footer */
+.app-root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.app-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: 24px;
+}
+
+/* Masonry Gallery */
+.gallery-masonry {
+    column-count: 1;
+    column-gap: 20px;
+}
+
+@media (min-width: 600px) {
+    .gallery-masonry {
+        column-count: 2;
+    }
+}
+
+.masonry-item {
+    break-inside: avoid;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.masonry-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.masonry-item:hover img {
+    transform: scale(1.02);
+}
