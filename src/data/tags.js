@@ -1,69 +1,96 @@
 const tags = {
-    // Frontend
+    // ======================
+    // CORE WEB
+    // ======================
+    html: "HTML",
+    css: "CSS",
+    javascript: "JavaScript",
+    typescript: "TypeScript",
+    php: "PHP",
+
+    // ======================
+    // FRONTEND FRAMEWORKS & TOOLS
+    // ======================
     react: "React",
     nextjs: "Next.js",
     vite: "Vite",
-    typescript: "TypeScript",
-    javascript: "JavaScript",
 
-    // UI Libraries
+    // State & Data
+    redux: "Redux",
+    axios: "Axios",
+    i18next: "i18next",
+
+    // ======================
+    // UI / DESIGN / UX
+    // ======================
     mui: "MUI",
     tailwind: "Tailwind CSS",
     bootstrap: "Bootstrap",
     shadcn: "ShadCN UI",
     swiper: "Swiper.js",
-    i18next: "i18next",
-    axios: "Axios",
-    redux: "Redux",
     moment: "Moment.js",
 
-    // Backend
+    // UI Features
+    responsive: "Responsive Design",
+    dashboard: "Dashboard",
+    animations: "Animations",
+    framer: "Framer Motion",
+    dragDrop: "Drag & Drop",
+
+    // ======================
+    // BACKEND FRAMEWORKS
+    // ======================
     node: "Node.js",
     express: "Express",
     nestjs: "NestJS",
     laravel: "Laravel",
     fastapi: "FastAPI",
-    php: "PHP",
-    html: "HTML",
-    css: "CSS",
 
+    // Backend Concepts
+    api: "API Integration",
+    crud: "CRUD",
+    auth: "Authentication",
+    realtime: "Realtime",
+    notifications: "Notifications",
 
-    // Database
+    // ======================
+    // DATABASE & STORAGE
+    // ======================
     mysql: "MySQL",
     postgres: "PostgreSQL",
     mongodb: "MongoDB",
     firebase: "Firebase",
+    neon: "Neon Postgres",
 
-    // Features
-    auth: "Authentication",
-    realtime: "Realtime",
-    dragDrop: "Drag & Drop",
-    offline: "Offline Support",
-    markdown: "Markdown Editor",
-    responsive: "Responsive Design",
-    dashboard: "Dashboard",
-    api: "API Integration",
-    crud: "CRUD",
+    // Database Features
     search: "Search & Filter",
-    reactQr: "React QR Code",
+    offline: "Offline Support",
+
+    // ======================
+    // CMS / CONTENT / SOCIAL
+    // ======================
     cms: "CMS",
     blog: "Blog",
+    markdown: "Markdown Editor",
     chat: "Chat System",
-    notifications: "Notifications",
+
+    // ======================
+    // INTEGRATIONS
+    // ======================
     maps: "Maps Integration",
     calendar: "Calendar Integration",
+    reactQr: "React QR Code",
 
-
-    // Animations
-    animations: "Animations",
-    framer: "Framer Motion",
-
-    // E-Commerce
+    // ======================
+    // E-COMMERCE
+    // ======================
     ecommerce: "E-Commerce",
     stripe: "Stripe Payments",
     checkout: "Checkout Flow",
 
-    // Tools / Utilities
+    // ======================
+    // PRODUCTIVITY / UTILITIES
+    // ======================
     productivity: "Productivity",
     tools: "Utilities",
     notes: "Note Taking",
@@ -71,19 +98,44 @@ const tags = {
     chrome: "Chrome Extension",
     edu: "Education",
 
-    // Deployment
+    // ======================
+    // DEPLOYMENT & DEVOPS
+    // ======================
     vercel: "Vercel",
     netlify: "Netlify",
     docker: "Docker",
 
-    // AI / ML (for future apps)
+    // Added DevOps / Tools
+    github: "GitHub",
+    git: "Git",
+    ci: "CI/CD",
+    env: "Environment Config",
+    hosting: "Hosting",
+
+    // ======================
+    // AI / ML
+    // ======================
     ai: "AI Powered",
     computerVision: "Computer Vision",
     yolo: "YOLOv8",
 
-    // Project Type
+    // Added AI tags
+    openai: "OpenAI API",
+    llm: "LLM Integration",
+    automation: "Automation",
+
+    // ======================
+    // PROJECT TYPES
+    // ======================
     portfolio: "Portfolio Project",
     webApp: "Web Application",
+
+    // Added project types
+    landing: "Landing Page",
+    adminPanel: "Admin Dashboard",
+    mobileFirst: "Mobile First",
+    saas: "SaaS Platform",
+    startup: "Startup Project",
 };
 
 export default tags;
