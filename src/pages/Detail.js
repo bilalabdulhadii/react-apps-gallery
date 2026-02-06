@@ -9,7 +9,11 @@ import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
 import ShareIcon from "@mui/icons-material/Share";
+import LanguageIcon from "@mui/icons-material/Language";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import CloseIcon from "@mui/icons-material/Close";
 import appsData from "../data/apps";
@@ -28,6 +32,7 @@ export default function Detail() {
     const [openImg, setOpenImg] = useState(false);
     const [imgIndex, setImgIndex] = useState(0);
     const [showFull, setShowFull] = useState(false);
+    const [openDeveloper, setOpenDeveloper] = useState(false);
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -47,6 +52,45 @@ export default function Detail() {
     const openFull = (index) => {
         setImgIndex(index);
         setOpenImg(true);
+    };
+
+    const developerSocials = app.developer
+        ? [
+              {
+                  key: "website",
+                  label: "Website",
+                  href: app.developer.url,
+                  icon: <LanguageIcon fontSize="small" />,
+              },
+              {
+                  key: "github",
+                  label: "GitHub",
+                  href: app.developer.github,
+                  icon: <GitHubIcon fontSize="small" />,
+              },
+              {
+                  key: "linkedin",
+                  label: "LinkedIn",
+                  href: app.developer.linkedin,
+                  icon: <LinkedInIcon fontSize="small" />,
+              },
+              {
+                  key: "instagram",
+                  label: "Instagram",
+                  href: app.developer.instagram,
+                  icon: <InstagramIcon fontSize="small" />,
+              },
+              {
+                  key: "facebook",
+                  label: "Facebook",
+                  href: app.developer.facebook,
+                  icon: <FacebookIcon fontSize="small" />,
+              },
+          ].filter((item) => Boolean(item.href))
+        : [];
+
+    const openDeveloperModal = () => {
+        if (app.developer) setOpenDeveloper(true);
     };
 
     return (
@@ -239,6 +283,179 @@ export default function Detail() {
                     </Box>
                 </Modal>
 
+                <Modal
+                    open={openDeveloper}
+                    onClose={() => setOpenDeveloper(false)}>
+                    <Box
+                        sx={{
+                            position: "absolute",
+                            top: "50%",
+                            left: "50%",
+                            transform: "translate(-50%, -50%)",
+                            width: { xs: "92%", md: 560 },
+                            bgcolor: "background.paper",
+                            boxShadow: "0 30px 80px rgba(12, 18, 28, 0.28)",
+                            p: 3,
+                            borderRadius: 3,
+                            maxHeight: "85vh",
+                            overflowY: "auto",
+                            background:
+                                "linear-gradient(160deg, rgba(255,255,255,0.92) 0%, rgba(245,248,252,0.95) 100%)",
+                            border: "1px solid rgba(255,255,255,0.6)",
+                            backdropFilter: "blur(14px)",
+                            "&:before": {
+                                content: '""',
+                                position: "absolute",
+                                top: -40,
+                                right: -40,
+                                width: 140,
+                                height: 140,
+                                borderRadius: "50%",
+                                background:
+                                    "radial-gradient(circle, rgba(63,131,248,0.25) 0%, rgba(63,131,248,0) 70%)",
+                                pointerEvents: "none",
+                            },
+                            "&:after": {
+                                content: '""',
+                                position: "absolute",
+                                bottom: -50,
+                                left: -50,
+                                width: 160,
+                                height: 160,
+                                borderRadius: "50%",
+                                background:
+                                    "radial-gradient(circle, rgba(16,185,129,0.18) 0%, rgba(16,185,129,0) 70%)",
+                                pointerEvents: "none",
+                            },
+                        }}>
+                        <Box
+                            sx={{
+                                display: "flex",
+                                justifyContent: "space-between",
+                                alignItems: "center",
+                                mb: 2,
+                            }}>
+                            <Box>
+                                <Typography variant="overline" sx={{ opacity: 0.6 }}>
+                                    Developer profile
+                                </Typography>
+                                <Typography variant="h5" sx={{ fontWeight: 700 }}>
+                                    Creative builder
+                                </Typography>
+                            </Box>
+                            <IconButton
+                                onClick={() => setOpenDeveloper(false)}>
+                                <CloseIcon />
+                            </IconButton>
+                        </Box>
+
+                        <Box
+                            sx={{
+                                display: "flex",
+                                gap: 2,
+                                alignItems: "center",
+                                mb: 2,
+                                p: 2,
+                                borderRadius: 2,
+                                background:
+                                    "linear-gradient(120deg, rgba(15,23,42,0.08) 0%, rgba(59,130,246,0.08) 100%)",
+                                border: "1px solid rgba(15,23,42,0.08)",
+                            }}>
+                            <Avatar
+                                src={app.developer?.avatar}
+                                alt={app.developer?.name}
+                                sx={{
+                                    width: 72,
+                                    height: 72,
+                                    border: "2px solid rgba(255,255,255,0.7)",
+                                }}
+                            />
+                            <Box sx={{ minWidth: 0 }}>
+                                <Box
+                                    sx={{
+                                        display: "flex",
+                                        alignItems: "center",
+                                        gap: 1,
+                                    }}>
+                                    <Typography
+                                        variant="h6"
+                                        sx={{ mb: 0.25, fontWeight: 700 }}>
+                                        {app.developer?.name}
+                                    </Typography>
+                                    {app.developer?.url && (
+                                        <IconButton
+                                            href={app.developer.url}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            size="small"
+                                            aria-label="Website">
+                                            <OpenInNewIcon fontSize="small" />
+                                        </IconButton>
+                                    )}
+                                </Box>
+                                {app.developer?.role && (
+                                    <Typography
+                                        variant="body2"
+                                        color="text.secondary"
+                                        sx={{
+                                            display: "inline-flex",
+                                            alignItems: "center",
+                                            gap: 0.5,
+                                            px: 1,
+                                            py: 0.25,
+                                            borderRadius: 999,
+                                            background:
+                                                "rgba(59,130,246,0.12)",
+                                            color: "primary.main",
+                                            fontWeight: 600,
+                                            width: "fit-content",
+                                        }}>
+                                        {app.developer.role}
+                                    </Typography>
+                                )}
+                            </Box>
+                        </Box>
+
+                        {app.developer?.bio && (
+                            <Typography
+                                variant="body2"
+                                color="text.secondary"
+                                sx={{ textAlign: "justify" }}>
+                                {app.developer.bio}
+                            </Typography>
+                        )}
+
+                        {developerSocials.length > 0 && (
+                            <Box
+                                sx={{
+                                    display: "flex",
+                                    gap: 0.5,
+                                    mt: 2,
+                                    flexWrap: "wrap",
+                                }}>
+                                {developerSocials.map((social) => (
+                                    <IconButton
+                                        key={social.key}
+                                        href={social.href}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        size="small"
+                                        aria-label={social.label}
+                                        sx={{
+                                            bgcolor: "rgba(15,23,42,0.06)",
+                                            "&:hover": {
+                                                bgcolor:
+                                                    "rgba(15,23,42,0.12)",
+                                            },
+                                        }}>
+                                        {social.icon}
+                                    </IconButton>
+                                ))}
+                            </Box>
+                        )}
+                    </Box>
+                </Modal>
+
                 <Box
                     sx={{
                         display: "flex",
@@ -258,28 +475,25 @@ export default function Detail() {
                     className="dev-card"
                     sx={{
                         mt: 1,
-                    }}>
+                        cursor: app.developer ? "pointer" : "default",
+                    }}
+                    onClick={openDeveloperModal}>
                     <Avatar
                         src={app.developer?.avatar}
                         alt={app.developer?.name}
                     />
                     <Box>
                         <Typography sx={{ fontWeight: 700 }}>
-                            <Link
-                                href={app.developer?.url}
-                                target="_blank"
-                                rel="noreferrer"
-                                underline="none"
-                                color="text.primary">
-                                {app.developer?.name}
-                            </Link>
+                            {app.developer?.name}
                         </Typography>
-                        <Typography
-                            variant="body2"
-                            color="text.secondary"
-                            sx={{ textAlign: "justify" }}>
-                            {app.developer?.bio}
-                        </Typography>
+                        {app.developer?.role && (
+                            <Typography
+                                variant="body2"
+                                color="text.secondary"
+                                sx={{ mb: 0.5 }}>
+                                {app.developer.role}
+                            </Typography>
+                        )}
                     </Box>
                 </Box>
             </Box>
