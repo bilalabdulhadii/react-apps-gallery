@@ -79,6 +79,7 @@ Todo List is a lightweight yet effective task management application built with 
         tags.crud,
         tags.search,
         tags.responsive,
+        tags.mobileFirst,
         tags.webApp,
     ],
     icon: todolistIcon,

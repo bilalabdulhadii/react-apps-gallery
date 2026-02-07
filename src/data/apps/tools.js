@@ -135,6 +135,7 @@ Quick Tools is more than just a set of utilities — it is a productivity-focuse
         tags.tools,
         tags.productivity,
         tags.responsive,
+        tags.mobileFirst,
         tags.webApp,
     ],
     icon: toolsIcon,

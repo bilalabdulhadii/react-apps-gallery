@@ -87,6 +87,7 @@ Projiz is a modern, scalable platform that connects a professional public presen
         tags.api,
         tags.search,
         tags.responsive,
+        tags.mobileFirst,
         tags.webApp,
         tags.reactQr,
     ],

@@ -80,6 +80,7 @@ Weather Forecast is a lightweight yet powerful weather application built with mo
         tags.bootstrap,
         tags.i18next,
         tags.responsive,
+        tags.mobileFirst,
         tags.webApp,
     ],
     icon: weatherIcon,

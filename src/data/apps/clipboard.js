@@ -71,6 +71,7 @@ Chrome Clipboard Extension is a simple yet powerful productivity tool that enhan
         tags.clipboard,
         tags.javascript,
         tags.productivity,
+        tags.utility,
         tags.tools,
     ],
     icon: clipboardIcon,

@@ -81,6 +81,7 @@ Elmas Coffee is a stylish and responsive online coffee webstore built to bring p
         tags.ecommerce,
         tags.search,
         tags.responsive,
+        tags.mobileFirst,
         tags.webApp,
     ],
     icon: elmascoffeeIcon,

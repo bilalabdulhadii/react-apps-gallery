@@ -83,6 +83,7 @@ Notes App is a lightweight yet powerful note-taking application built with moder
         tags.notes,
         tags.search,
         tags.responsive,
+        tags.mobileFirst,
         tags.webApp,
     ],
     icon: notesIcon,

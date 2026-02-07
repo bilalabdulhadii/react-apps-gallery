@@ -8,6 +8,7 @@ import { calculator } from "./apps/calculator";
 import { clipboard } from "./apps/clipboard";
 import { akademyati } from "./apps/akademyati";
 import { projiz } from "./apps/projiz";
+import encode from "./apps/encode";
 
 const apps = [
     projiz,
@@ -15,6 +16,7 @@ const apps = [
     elmascoffee,
     tools,
     todolist,
+    encode,
     clipboard,
     pin,
     notes,

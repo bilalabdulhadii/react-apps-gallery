@@ -97,6 +97,9 @@ const tags = {
     clipboard: "Clipboard",
     chrome: "Chrome Extension",
     edu: "Education",
+    qr: "QR Code",
+    barcode: "Barcode Scanner",
+    utility: "Utility",
 
     // ======================
     // DEPLOYMENT & DEVOPS
