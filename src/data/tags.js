@@ -9,7 +9,7 @@ const tags = {
     php: "PHP",
 
     // ======================
-    // FRONTEND FRAMEWORKS & TOOLS
+    // FRONTEND FRAMEWORKS
     // ======================
     react: "React",
     nextjs: "Next.js",
@@ -28,14 +28,15 @@ const tags = {
     bootstrap: "Bootstrap",
     shadcn: "ShadCN UI",
     swiper: "Swiper.js",
+    framer: "Framer Motion",
     moment: "Moment.js",
 
     // UI Features
     responsive: "Responsive Design",
     dashboard: "Dashboard",
     animations: "Animations",
-    framer: "Framer Motion",
     dragDrop: "Drag & Drop",
+    gallery: "Image Gallery",
 
     // ======================
     // BACKEND FRAMEWORKS
@@ -50,6 +51,8 @@ const tags = {
     api: "API Integration",
     crud: "CRUD",
     auth: "Authentication",
+    authorization: "Authorization",
+    validation: "Validation",
     realtime: "Realtime",
     notifications: "Notifications",
 
@@ -59,8 +62,12 @@ const tags = {
     mysql: "MySQL",
     postgres: "PostgreSQL",
     mongodb: "MongoDB",
-    firebase: "Firebase",
     neon: "Neon Postgres",
+
+    firebase: "Firebase",
+    firestore: "Firestore",
+    storage: "Cloud Storage",
+    nosql: "NoSQL Database",
 
     // Database Features
     search: "Search & Filter",
@@ -92,14 +99,13 @@ const tags = {
     // PRODUCTIVITY / UTILITIES
     // ======================
     productivity: "Productivity",
-    tools: "Utilities",
     notes: "Note Taking",
     clipboard: "Clipboard",
     chrome: "Chrome Extension",
     edu: "Education",
     qr: "QR Code",
     barcode: "Barcode Scanner",
-    utility: "Utility",
+    utility: "Utilities",
 
     // ======================
     // DEPLOYMENT & DEVOPS
@@ -107,8 +113,6 @@ const tags = {
     vercel: "Vercel",
     netlify: "Netlify",
     docker: "Docker",
-
-    // Added DevOps / Tools
     github: "GitHub",
     git: "Git",
     ci: "CI/CD",
@@ -121,8 +125,6 @@ const tags = {
     ai: "AI Powered",
     computerVision: "Computer Vision",
     yolo: "YOLOv8",
-
-    // Added AI tags
     openai: "OpenAI API",
     llm: "LLM Integration",
     automation: "Automation",
@@ -132,8 +134,8 @@ const tags = {
     // ======================
     portfolio: "Portfolio Project",
     webApp: "Web Application",
-
-    // Added project types
+    fullstack: "Full Stack",
+    cloudApp: "Cloud Application",
     landing: "Landing Page",
     adminPanel: "Admin Dashboard",
     mobileFirst: "Mobile First",

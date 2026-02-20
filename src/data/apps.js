@@ -9,9 +9,11 @@ import { clipboard } from "./apps/clipboard";
 import { akademyati } from "./apps/akademyati";
 import { projiz } from "./apps/projiz";
 import encode from "./apps/encode";
+import { lens } from "./apps/lens";
 
 const apps = [
     projiz,
+    lens,
     akademyati,
     elmascoffee,
     tools,
