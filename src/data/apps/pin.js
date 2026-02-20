@@ -69,13 +69,17 @@ Pin Linktree is a lightweight and elegant link hub application built with modern
 `,
     tags: [
         tags.react,
-        tags.mui,
         tags.javascript,
+
+        tags.mui,
         tags.bootstrap,
+
         tags.responsive,
-        tags.reactQr,
         tags.mobileFirst,
+        tags.reactQr,
+
         tags.webApp,
+        tags.portfolio,
     ],
     icon: pinIcon,
     cover: pinCover,

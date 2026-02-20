@@ -37,6 +37,7 @@ const tags = {
     animations: "Animations",
     dragDrop: "Drag & Drop",
     gallery: "Image Gallery",
+    darkMode: "Dark Mode Support",
 
     // ======================
     // BACKEND FRAMEWORKS

@@ -189,24 +189,29 @@ Akademyati is not only a learning platform — it is a foundation for a future-r
 `,
     tags: [
         tags.laravel,
-        tags.mysql,
         tags.php,
+        tags.mysql,
+
         tags.html,
         tags.css,
         tags.bootstrap,
         tags.javascript,
-        tags.responsive,
-        tags.webApp,
-        tags.cms,
-        tags.dashboard,
+
         tags.auth,
+        tags.authorization,
         tags.crud,
+        tags.validation,
+
+        tags.dashboard,
+        tags.cms,
         tags.search,
         tags.chat,
         tags.notifications,
-        tags.ecommerce,
+
+        tags.fullstack,
+        tags.webApp,
+
         tags.edu,
-        tags.productivity,
     ],
     icon: akademyatiIcon,
     cover: akademyatiCover,

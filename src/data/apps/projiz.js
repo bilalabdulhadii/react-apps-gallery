@@ -21,7 +21,6 @@ import projizImage12 from "../../assets/apps/images/projiz/12.png";
 import projizImage13 from "../../assets/apps/images/projiz/13.png";
 import projizImage14 from "../../assets/apps/images/projiz/14.png";
 
-
 export const projiz = {
     title: "Projiz - Digital Solutions Platform",
     slug: "projiz",
@@ -70,26 +69,33 @@ The public site delivers the brand message clearly and guides visitors into acti
 ### Summary
 Projiz is a modern, scalable platform that connects a professional public presence with a powerful internal operations layer. It delivers strong UX on the frontend and full control of data and workflows behind the scenes, making it ready for growth and long-term product evolution.
 `,
-
     tags: [
-        tags.react,
         tags.nextjs,
         tags.typescript,
-        tags.shadcn,
+
         tags.tailwind,
+        tags.shadcn,
         tags.framer,
         tags.animations,
-        tags.neon,
+
         tags.postgres,
-        tags.vercel,
-        tags.dashboard,
+        tags.neon,
+
         tags.auth,
-        tags.api,
+        tags.authorization,
+        tags.validation,
+        tags.crud,
         tags.search,
+
+        tags.adminPanel,
+
         tags.responsive,
         tags.mobileFirst,
+        tags.darkMode,
+
+        tags.vercel,
         tags.webApp,
-        tags.reactQr,
+        tags.fullstack,
     ],
     icon: projizIcon,
     cover: projizCover,

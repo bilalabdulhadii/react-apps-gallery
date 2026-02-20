@@ -71,11 +71,17 @@ Basic Calculator is a lightweight and elegant arithmetic tool built with modern 
 `,
     tags: [
         tags.react,
-        tags.mui,
         tags.javascript,
+
+        tags.mui,
         tags.bootstrap,
+
         tags.responsive,
         tags.mobileFirst,
+
+        tags.utility,
+        tags.productivity,
+
         tags.webApp,
     ],
     icon: calculatorIcon,

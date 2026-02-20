@@ -74,16 +74,21 @@ Notes App is a lightweight yet powerful note-taking application built with moder
 
     tags: [
         tags.react,
-        tags.mui,
         tags.javascript,
+
+        tags.mui,
         tags.bootstrap,
-        tags.realtime,
-        tags.productivity,
+
         tags.crud,
-        tags.notes,
         tags.search,
+        tags.realtime,
+        tags.notes,
+        tags.productivity,
+
         tags.responsive,
         tags.mobileFirst,
+        tags.darkMode,
+
         tags.webApp,
     ],
     icon: notesIcon,

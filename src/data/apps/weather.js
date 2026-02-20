@@ -72,15 +72,20 @@ Weather Forecast is a lightweight yet powerful weather application built with mo
 `,
     tags: [
         tags.react,
+        tags.javascript,
+
         tags.mui,
+        tags.bootstrap,
+
         tags.api,
         tags.axios,
-        tags.moment,
-        tags.javascript,
-        tags.bootstrap,
         tags.i18next,
+        tags.moment,
+
         tags.responsive,
         tags.mobileFirst,
+        tags.darkMode,
+
         tags.webApp,
     ],
     icon: weatherIcon,

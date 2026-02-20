@@ -121,6 +121,7 @@ Lens is a production-ready image gallery platform that showcases full-stack deve
 
         tags.responsive,
         tags.mobileFirst,
+        tags.darkMode,
         tags.fullstack,
         tags.dashboard,
         tags.cloudApp,

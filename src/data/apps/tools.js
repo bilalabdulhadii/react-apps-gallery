@@ -126,16 +126,20 @@ Quick Tools is an open-source project, making it both a practical toolbox and a 
 ### Summary
 Quick Tools is more than just a set of utilities — it is a productivity-focused toolkit built with modern web technologies, delivering elegant design, fast performance, and real value through a growing collection of tools that save time and enhance daily workflows.
 `,
-
     tags: [
         tags.react,
-        tags.mui,
         tags.javascript,
+
+        tags.mui,
         tags.bootstrap,
-        tags.tools,
+
+        tags.utility,
         tags.productivity,
+
         tags.responsive,
         tags.mobileFirst,
+        tags.darkMode,
+
         tags.webApp,
     ],
     icon: toolsIcon,

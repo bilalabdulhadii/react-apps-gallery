@@ -102,16 +102,20 @@ QR & Barcode Toolkit is a focused and efficient code generation platform that co
 
     tags: [
         tags.react,
-        tags.mui,
         tags.javascript,
+
+        tags.mui,
         tags.bootstrap,
-        tags.tools,
-        tags.productivity,
+
         tags.qr,
         tags.barcode,
         tags.utility,
+        tags.productivity,
+
         tags.responsive,
         tags.mobileFirst,
+        tags.darkMode,
+
         tags.webApp,
     ],
     icon: encodeIcon,

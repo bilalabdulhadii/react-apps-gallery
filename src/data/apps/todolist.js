@@ -68,18 +68,20 @@ Todo List is an open-source project that demonstrates essential React developmen
 ### Summary
 Todo List is a lightweight yet effective task management application built with modern web technologies. With its clean design, responsive experience, and productivity-focused features, it offers a simple way to stay organized, complete tasks efficiently, and manage daily workflows with ease.
 `,
-
     tags: [
         tags.react,
-        tags.mui,
         tags.javascript,
+
+        tags.mui,
         tags.bootstrap,
-        tags.productivity,
-        tags.realtime,
+
         tags.crud,
         tags.search,
+        tags.productivity,
+
         tags.responsive,
         tags.mobileFirst,
+        tags.darkMode,
         tags.webApp,
     ],
     icon: todolistIcon,
