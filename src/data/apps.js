@@ -10,12 +10,14 @@ import { akademyati } from "./apps/akademyati";
 import { projiz } from "./apps/projiz";
 import encode from "./apps/encode";
 import { lens } from "./apps/lens";
+import { links } from "./apps/links";
 
 const apps = [
     projiz,
     lens,
     akademyati,
     elmascoffee,
+    links,
     tools,
     todolist,
     encode,

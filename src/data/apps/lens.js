@@ -2,7 +2,7 @@ import developers from "../developers";
 import tags from "../tags";
 
 // icons
-import notesIcon from "../../assets/apps/icons/lens.png";
+import lensIcon from "../../assets/apps/icons/lens.png";
 
 // images
 import lensCover from "../../assets/apps/images/lens/cover.png";
@@ -128,7 +128,7 @@ Lens is a production-ready image gallery platform that showcases full-stack deve
         tags.vercel,
         tags.webApp,
     ],
-    icon: notesIcon,
+    icon: lensIcon,
     cover: lensCover,
     badge: "Next JS",
     images: [
