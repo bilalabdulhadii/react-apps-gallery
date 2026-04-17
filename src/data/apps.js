@@ -11,6 +11,8 @@ import { projiz } from "./apps/projiz";
 import encode from "./apps/encode";
 import { lens } from "./apps/lens";
 import { links } from "./apps/links";
+import { textlab } from "./apps/textlab";
+import { enigma } from "./apps/enigma";
 
 const apps = [
     projiz,
@@ -19,8 +21,10 @@ const apps = [
     elmascoffee,
     links,
     tools,
+    textlab,
     todolist,
     encode,
+    enigma,
     clipboard,
     pin,
     notes,

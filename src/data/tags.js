@@ -142,6 +142,22 @@ const tags = {
     mobileFirst: "Mobile First",
     saas: "SaaS Platform",
     startup: "Startup Project",
+
+    localStorage: "Local Storage",
+    fileManager: "File Management",
+    workspace: "Workspace Tool",
+    textEditor: "Text Editor",
+    materialDesign: "Material Design",
+
+    simulation: "Simulation",
+    algorithm: "Algorithm",
+    visualization: "Data Visualization",
+    cryptography: "Cryptography",
+    encryption: "Encryption",
+    cipher: "Cipher Systems",
+    interactive: "Interactive UI",
+    customUI: "Custom UI",
+    realtimeAnimation: "Realtime Animation",
 };
 
 export default tags;
