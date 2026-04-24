@@ -13,15 +13,17 @@ import { lens } from "./apps/lens";
 import { links } from "./apps/links";
 import { textlab } from "./apps/textlab";
 import { enigma } from "./apps/enigma";
+import { widget } from "./apps/widget";
 
 const apps = [
     projiz,
     lens,
     akademyati,
     elmascoffee,
-    links,
+    widget,
     tools,
     textlab,
+    links,
     todolist,
     encode,
     enigma,
