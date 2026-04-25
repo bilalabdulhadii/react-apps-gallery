@@ -14,6 +14,7 @@ import { links } from "./apps/links";
 import { textlab } from "./apps/textlab";
 import { enigma } from "./apps/enigma";
 import { widget } from "./apps/widget";
+import { json } from "./apps/json";
 
 const apps = [
     projiz,
@@ -24,6 +25,7 @@ const apps = [
     tools,
     textlab,
     links,
+    json,
     todolist,
     encode,
     enigma,
