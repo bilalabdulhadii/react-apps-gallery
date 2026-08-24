@@ -15,6 +15,7 @@ import { textlab } from "./apps/textlab";
 import { enigma } from "./apps/enigma";
 import { widget } from "./apps/widget";
 import { json } from "./apps/json";
+import { snipboard } from "./apps/snipboard";
 
 const apps = [
     projiz,
@@ -28,6 +29,7 @@ const apps = [
     json,
     todolist,
     encode,
+    snipboard,
     enigma,
     clipboard,
     pin,
